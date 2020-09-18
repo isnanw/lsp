@@ -118,16 +118,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <ul>
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Home 
+                HOME
                 
               </a>
-                
-              <ul class="dropdown-menu">
-                <li><a href="index.html">Home Default</a></li>
-                <li class="active"><a href="index-header-fix.html">Home with Header Fixed</a></li>
-                <li><a href="index-without-topbar.html">Home without Top Bar</a></li>
-              </ul>
-            </li>
+              
+            <!-- </li>
             <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Mega Menu
@@ -181,31 +176,23 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> -->
+
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Pages 
+                TENTANG KAMI
                 
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="page-about.html">About Us</a></li>
-                <li><a href="page-services.html">Services</a></li>
-                <li><a href="page-prices.html">Prices</a></li>
-                <li><a href="page-faq.html">FAQ</a></li>
-                <li><a href="page-gallery.html">Gallery</a></li>
-                <li><a href="page-search-result.html">Search Result</a></li>
-                <li><a href="page-404.html">404</a></li>
-                <li><a href="page-500.html">500</a></li>
-                <li><a href="page-login.html">Login Page</a></li>
-                <li><a href="page-forgotton-password.html">Forget Password</a></li>
-                <li><a href="page-reg-page.html">Signup Page</a></li>
-                <li><a href="page-careers.html">Careers</a></li>
-                <li><a href="page-site-map.html">Site Map</a></li>
-                <li><a href="page-contacts.html">Contact</a></li>                
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Visi & Misi</a></li>
+                <li><a href="#">Struktur Organisasi</a></li>              
               </ul>
             </li>
-            <li class="dropdown">
+
+            <!-- <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Multilevel
                 
@@ -231,34 +218,60 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> -->
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Portfolio 
+                SERTIFIKASI
                 
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="portfolio-4.html">Portfolio 4</a></li>
-                <li><a href="portfolio-3.html">Portfolio 3</a></li>
-                <li><a href="portfolio-2.html">Portfolio 2</a></li>
-                <li><a href="portfolio-item.html">Portfolio Item</a></li>
+                <li><a href="#">Skema Sertifikasi</a></li>
+                <li><a href="#">Asesor Kompetensi</a></li>
+                <li><a href="#">Tempat Uji kompEtensi</a></li>
+                <li><a href="#">Pemegang Sertifikat</a></li>
+                <li><a href="#">SMK Jenjaring Kerja</a></li>
               </ul>
             </li>
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Blog 
+                INFORMASI
                 
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="blog.html">Blog Page</a></li>
-                <li><a href="blog-item.html">Blog Item</a></li>
+                <li><a href="#">Agenda Kegiatan</a></li>
+                <li><a href="#">Foto Kegiatan</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Tanya Jawab</a></li>
               </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                PENDAFTARAN
+                
+              </a>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                DOWNLOAD
+                
+              </a>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                KONTAK KAMI
+                
+              </a>
             </li>
             
             
-            <li><a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes&amp;utm_source=download&amp;utm_medium=banner&amp;utm_campaign=metronic_frontend_freebie" target="_blank">Admin theme</a></li>
+            <!-- <li><a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes&amp;utm_source=download&amp;utm_medium=banner&amp;utm_campaign=metronic_frontend_freebie" target="_blank">Admin theme</a></li> -->
 
             <!-- BEGIN TOP SEARCH -->
             <li class="menu-search">
