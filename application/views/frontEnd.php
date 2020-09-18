@@ -65,7 +65,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- Body BEGIN -->
 <body class="corporate">
     <!-- BEGIN STYLE CUSTOMIZER -->
-    <div class="color-panel hidden-sm">
+    <!-- <div class="color-panel hidden-sm">
       <div class="color-mode-icons icon-color"></div>
       <div class="color-mode-icons icon-color-close"></div>
       <div class="color-mode">
@@ -79,7 +79,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <li class="color-turquoise" data-style="turquoise"></li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <!-- END BEGIN STYLE CUSTOMIZER --> 
 
     <!-- BEGIN TOP BAR -->
@@ -109,7 +109,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="index.html"><img src="<?=base_url();?>assets/frontEnd/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd"></a>
+        <a class="site-logo" href="index.html"><img src="<?=base_url();?>assets/frontEnd/corporate/img/logos/logo-corp-red.png" alt="LogoLSP"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -511,7 +511,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <div class="tab-content">
               <div class="tab-pane row fade in active" id="tab-1">
                 <div class="col-md-3 col-sm-3">
-                  <a href="assets/temp/photos/img7.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
+                  <a href="<?=base_url();?>assets/frontEnd/pages/img/photos/img7.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
                     <img class="img-responsive" src="<?=base_url();?>assets/frontEnd/pages/img/photos/img7.jpg" alt="">
                   </a>
                 </div>
@@ -525,7 +525,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia..</p>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                  <a href="assets/temp/photos/img10.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
+                  <a href="<?=base_url();?>assets/frontEnd/pages/img/photos/img10.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
                     <img class="img-responsive" src="<?=base_url();?>assets/frontEnd/pages/img/photos/img10.jpg" alt="">
                   </a>
                 </div>
