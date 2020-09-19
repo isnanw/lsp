@@ -98,7 +98,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="page-login.html">Log In</a></li>
-                        <li><a href="page-reg-page.html">Registration</a></li>
+                        <!-- <li><a href="page-reg-page.html">Registration</a></li> -->
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
@@ -374,127 +374,85 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="main">
       <div class="container">
         <!-- BEGIN SERVICE BOX -->   
-        <div class="row service-box margin-bottom-40">
+        <!-- <div class="row service-box margin-bottom-40">
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-location-arrow blue"></i></em>
-              <span>Multipurpose Template</span>
+              <span>Profil</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
+            <p align="center">LSP SMK Negeri 2 Karanganyar mempunyai tugas mengembangkan standar kompetensi, menerbitkan sertifikat kompetensi serta</p>
           </div>
+          
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-check red"></i></em>
-              <span>Well Documented</span>
+              <span>Visi & Misi</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
+            <p align="center">Menjadikan Lembaga Sertifikasi Profesi sebagai lembaga independen yang terpercaya di Indonesia serta diakui secara internasional</p>
           </div>
+
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
               <em><i class="fa fa-compress green"></i></em>
-              <span>Responsive Design</span>
+              <span>Struktur Organisasi</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
+            <p align="center">LSP SMK Negeri 2 Karanganyar mendokumentasikan struktur organisasi, yang menguraikan penugasan, tanggung jawab dan wewenang Ketua, personil sertifikasi</p>
           </div>
-        </div>
+        </div> -->
         <!-- END SERVICE BOX -->
 
-        <!-- BEGIN BLOCKQUOTE BLOCK -->   
-        <div class="row quote-v1 margin-bottom-30">
-          <div class="col-md-9">
-            <span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
+        <!-- BEGIN STEPS -->
+        <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step1">
+              <h2>Profil</h2>
+              <p>LSP SMK Negeri 2 Karanganyar mempunyai tugas mengembangkan standar kompetensi, menerbitkan sertifikat kompetensi serta</p>
+              <input type="button" value="Baca Selengkapnya">
+            </div>
           </div>
-          <div class="col-md-3 text-right">
-            <a class="btn-transparent" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Preview Admin</a>
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step2">
+              <h2>Visi & Misi</h2>
+              <p>Menjadikan Lembaga Sertifikasi Profesi sebagai lembaga independen yang terpercaya di Indonesia serta diakui secara internasional</p>
+              <input type="button" value="Baca Selengkapnya">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 front-step-col">
+            <div class="front-step front-step3">
+              <h2>Struktur Organisasi</h2>
+              <p>LSP SMK Negeri 2 Karanganyar mendokumentasikan struktur organisasi, yang menguraikan penugasan, tanggung jawab dan wewenang Ketua, personil sertifikasi</p>
+              <input type="button" value="Baca Selengkapnya">
+            </div>
           </div>
         </div>
-        <!-- END BLOCKQUOTE BLOCK -->
+        <!-- END STEPS -->
 
         <!-- BEGIN RECENT WORKS -->
+        <h3>Agenda Kegiatan LSP</h3>
         <div class="row recent-work margin-bottom-40">
-          <div class="col-md-3">
-            <h2><a href="portfolio.html">Recent Works</a></h2>
-            <p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde voluptatem. Sed unde omnis iste natus error sit voluptatem.</p>
+          <div class="col-md-2">
+            <h4><font color="blue">26 - 28 Februari 2020</font></h4>
+            <p>Kode : BNSP.UJK. </p>
+            <p>202003060441</p>
+            <p>Uji Kompetensi Skema Sertifikasi KKNI LEVEL II pada Kompetensi Keahlian Produksi dan Siaran Program Televisi (PSPTv)</p>
+            <p>Jumlah : 66 Asesi</p>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-2">
+            <h4><font color="blue">26 - 29Februari 2020</font></h4>
+            <p>Kode : BNSP.UJK. </p>
+            <p>202003060451</p>
+            <p>Uji Kompetensi Skema Sertifikasi KKNI Level II pada Kompetensi Keahlian Otomatisasi dan Tatakelola Perkantoran (OTP)</p>
+            <p>Jumlah : 108 Asesi</p>
+          </div>
+          <div class="col-md-2">
+            <h4><font color="blue">26 - 29Februari 2020</font></h4>
+            <p>Kode : BNSP.UJK. </p>
+            <p>202003051024</p>
+            <p>Uji Kompetensi Skema Sertifikasi KKNI Level II pada Kompetensi Keahlian Bisnis Daring dan Pemasaran (BDP)</p>
+            <p>Jumlah : 65 Asesi</p>
+          </div>
+          <div class="col-md-6">
             <div class="owl-carousel owl-carousel3">
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img1.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img1.jpg" class="fancybox-button" title="Project Name #1" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img2.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img2.jpg" class="fancybox-button" title="Project Name #2" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img5.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img5.jpg" class="fancybox-button" title="Project Name #5" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img6.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img6.jpg" class="fancybox-button" title="Project Name #6" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
-              <div class="recent-work-item">
-                <em>
-                  <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">
-                  <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                </em>
-                <a class="recent-work-description" href="javascript:;">
-                  <strong>Amazing Project</strong>
-                  <b>Agenda corp.</b>
-                </a>
-              </div>
               <div class="recent-work-item">
                 <em>
                   <img src="<?=base_url();?>assets/frontEnd/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">
@@ -510,6 +468,18 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           </div>
         </div>   
         <!-- END RECENT WORKS -->
+
+        <!-- BEGIN BLOCKQUOTE BLOCK -->   
+        <div class="row quote-v1 margin-bottom-30">
+          <div class="col-md-9">
+            <span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
+          </div>
+          <div class="col-md-3 text-right">
+            <a class="btn-transparent
+            " href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Preview Admin</a>
+          </div>
+        </div>
+        <!-- END BLOCKQUOTE BLOCK -->
 
         <!-- BEGIN TABS AND TESTIMONIALS -->
         <div class="row mix-block margin-bottom-40">
@@ -598,29 +568,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- END TESTIMONIALS -->
         </div>                
         <!-- END TABS AND TESTIMONIALS -->
-
-        <!-- BEGIN STEPS -->
-        <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
-          <div class="col-md-4 col-sm-4 front-step-col">
-            <div class="front-step front-step1">
-              <h2>Goal definition</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 front-step-col">
-            <div class="front-step front-step2">
-              <h2>Analyse</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 front-step-col">
-            <div class="front-step front-step3">
-              <h2>Implementation</h2>
-              <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-            </div>
-          </div>
-        </div>
-        <!-- END STEPS -->
 
         <!-- BEGIN CLIENTS -->
         <div class="row margin-bottom-40 our-clients">
