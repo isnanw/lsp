@@ -402,34 +402,34 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- END SERVICE BOX -->
 
         <!-- BEGIN STEPS -->
-        <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3">
+        <div class="row margin-bottom-60 front-steps-wrapper front-steps-count-3">
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step1">
               <h2>Profil</h2>
-              <p>LSP SMK Negeri 2 Karanganyar mempunyai tugas mengembangkan standar kompetensi, menerbitkan sertifikat kompetensi serta</p>
-              <input type="button" value="Baca Selengkapnya">
+              <p>LSP SMK Negeri 2 Karanganyar mempunyai tugas mengembangkan standar kompetensi, menerbitkan sertifikat kompetensi serta</p><br>
+              <a class="btn btn-warning" href="#">Selengkapnya</a>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step2">
               <h2>Visi & Misi</h2>
-              <p>Menjadikan Lembaga Sertifikasi Profesi sebagai lembaga independen yang terpercaya di Indonesia serta diakui secara internasional</p>
-              <input type="button" value="Baca Selengkapnya">
+              <p>Menjadikan Lembaga Sertifikasi Profesi sebagai lembaga independen yang terpercaya di Indonesia serta diakui secara internasional</p><br>
+              <a class="btn btn-warning" href="#">Selengkapnya</a>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 front-step-col">
             <div class="front-step front-step3">
               <h2>Struktur Organisasi</h2>
-              <p>LSP SMK Negeri 2 Karanganyar mendokumentasikan struktur organisasi, yang menguraikan penugasan, tanggung jawab dan wewenang Ketua, personil sertifikasi</p>
-              <input type="button" value="Baca Selengkapnya">
+              <p>LSP SMK Negeri 2 Karanganyar mendokumentasikan struktur organisasi, yang menguraikan penugasan, tanggung jawab dan wewenang Ketua, personil sertifikasi</p><br>
+              <a class="btn btn-warning" href="#">Selengkapnya</a>
             </div>
           </div>
         </div>
         <!-- END STEPS -->
 
         <!-- BEGIN RECENT WORKS -->
-        <h3>Agenda Kegiatan LSP</h3>
-        <div class="row recent-work margin-bottom-40">
+        <h3>Agenda Kegiatan LSP</h3><br>
+        <div class="row recent-work margin-bottom-60">
           <div class="col-md-2">
             <h4><font color="blue">26 - 28 Februari 2020</font></h4>
             <p>Kode : BNSP.UJK. </p>
@@ -470,9 +470,14 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- END RECENT WORKS -->
 
         <!-- BEGIN BLOCKQUOTE BLOCK -->   
-        <div class="row quote-v1 margin-bottom-30">
+        <div class="row quote-v1 margin-bottom-60">
           <div class="col-md-9">
-            <span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
+          <center>
+            <font color = "white">
+              <h2>LSP SMK Negeri 2 Karanganyar</h2>
+              <h5>LSP SMK Negeri 2 Karanganyar berfungsi dan mempunyai tugas melaksanakan uji kompetensi, menerbitkan sertifikat kompetensi serta melakukan verifikasi tempat uji kompetensi.</h5>
+            </font>
+          </center>
           </div>
           <div class="col-md-3 text-right">
             <a class="btn-transparent
@@ -482,49 +487,10 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- END BLOCKQUOTE BLOCK -->
 
         <!-- BEGIN TABS AND TESTIMONIALS -->
-        <div class="row mix-block margin-bottom-40">
-          <!-- TABS -->
-          <div class="col-md-7 tab-style-1">
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#tab-1" data-toggle="tab">Multipurpose</a></li>
-              <li><a href="#tab-2" data-toggle="tab">Documented</a></li>
-              <li><a href="#tab-3" data-toggle="tab">Responsive</a></li>
-              <li><a href="#tab-4" data-toggle="tab">Clean & Fresh</a></li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane row fade in active" id="tab-1">
-                <div class="col-md-3 col-sm-3">
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/photos/img7.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
-                    <img class="img-responsive" src="<?=base_url();?>assets/frontEnd/pages/img/photos/img7.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-9 col-sm-9">
-                  <p class="margin-bottom-10">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p>
-                  <p><a class="more" href="javascript:;">Read more <i class="icon-angle-right"></i></a></p>
-                </div>
-              </div>
-              <div class="tab-pane row fade" id="tab-2">
-                <div class="col-md-9 col-sm-9">
-                  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia..</p>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                  <a href="<?=base_url();?>assets/frontEnd/pages/img/photos/img10.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
-                    <img class="img-responsive" src="<?=base_url();?>assets/frontEnd/pages/img/photos/img10.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="tab-3">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-              </div>
-              <div class="tab-pane fade" id="tab-4">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
-              </div>
-            </div>
-          </div>
-          <!-- END TABS -->
-        
-          <!-- TESTIMONIALS -->
-          <div class="col-md-5 testimonials-v1">
+        <div class="row mix-block margin-bottom-60">
+        <!-- TESTIMONIALS -->
+        <div class="col-md-12 testimonials-v1">
+         <h3>Skema Sertifikasi LSP SMK Negeri 2 Karanganyar</h3>
             <div id="myCarousel" class="carousel slide">
               <!-- Carousel items -->
               <div class="carousel-inner">
@@ -565,12 +531,49 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <a class="right-btn" href="#myCarousel" data-slide="next"></a>
             </div>
           </div>
-          <!-- END TESTIMONIALS -->
+        </div>
+        <!-- END TESTIMONIALS -->
+
+        <!-- TABS -->
+        <div class="row mix-block margin-bottom-40">
+          <div class="col-md-12 tab-style-1">
+          <h3>Daftar SMK Jejaring Kerja LSP SMK Negeri 2 Karanganyar</h3>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab-1" data-toggle="tab">Teknik Pemesinan</a></li>
+              <li><a href="#tab-2" data-toggle="tab">RPL</a></li>
+              <!-- <li><a href="#tab-3" data-toggle="tab">Responsive</a></li>
+              <li><a href="#tab-4" data-toggle="tab">Clean & Fresh</a></li> -->
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane row fade in active" id="tab-1">
+                <div class="col-md-9 col-sm-9">
+                  <p>SMK MUHAMMADIYAH 1 GONDANGREJO KARANGANYAR</p>
+                  <p>SMK YP COLOMADU KARANGANYAR</p>
+                  <p>SMK BHINA KARYA KARANGANYAR</p>
+                  <p>SMK TUNAS MUDA KARANGANYAR</p>
+                  <p>SMK SATYA KARYA KARANGANYAR</p>
+                  <p>SMK KARYA TEKNIKA KARANGANYAR</p>
+                </div>
+              </div>
+              <div class="tab-pane row fade" id="tab-2">
+                <div class="col-md-9 col-sm-9">
+                <p>SMK BHINA KARYA KARANGANYAR</p>
+                </div>
+              </div>
+              <!-- <div class="tab-pane fade" id="tab-3">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="tab-4">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div> -->
+            </div>
+          </div>
+          <!-- END TABS -->
         </div>                
         <!-- END TABS AND TESTIMONIALS -->
 
         <!-- BEGIN CLIENTS -->
-        <div class="row margin-bottom-40 our-clients">
+        <!-- <div class="row margin-bottom-40 our-clients">
           <div class="col-md-3">
             <h2><a href="javascript:;">Our Clients</a></h2>
             <p>Lorem dipsum folor margade sitede lametep eiusmod psumquis dolore.</p>
@@ -627,7 +630,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </div>                  
             </div>
           </div>          
-        </div>
+        </div> -->
         <!-- END CLIENTS -->
       </div>
     </div>
@@ -639,28 +642,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- BEGIN BOTTOM ABOUT BLOCK -->
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat.</p>
-
-            <div class="photo-stream">
-              <h2>Photos Stream</h2>
-              <ul class="list-unstyled">
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img1.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img6.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img2.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img5.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img5-small.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img1.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img4-large.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img6.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img3.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/people/img2-large.jpg"></a></li>
-                <li><a href="javascript:;"><img alt="" src="<?=base_url();?>assets/frontEnd/pages/img/works/img2.jpg"></a></li>
-              </ul>                    
-            </div>
+            <p>SMK Negeri 2 Karanganyar adalah salah satu Sekolah Menengah Kejuruan favorit di Kabupaten Karanganyar. Dan merupakan sekolah yang terbaik, berwawasan, disiplin, tanggung jawab, dan bermoral baik.</p>
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
 
@@ -668,33 +650,19 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <div class="col-md-4 col-sm-6 pre-footer-col">
             <h2>Our Contacts</h2>
             <address class="margin-bottom-40">
-              35, Lorem Lis Street, Park Ave<br>
-              California, US<br>
-              Phone: 300 323 3456<br>
-              Fax: 300 323 1456<br>
-              Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-              Skype: <a href="skype:metronic">metronic</a>
+              Jln. Yos Sudarso, Bejen, Kab. Karanganyar<br>
+              Jawa Tengah, Indonesia<br>
+              Phone: 0271-494549<br>
+              Email: <a href="mailto:support@smkn2kra.sch.id">support@smkn2kra.sch.id</a><br>
             </address>
-
-            <div class="pre-footer-subscribe-box pre-footer-subscribe-box-vertical">
-              <h2>Newsletter</h2>
-              <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" placeholder="youremail@mail.com" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Subscribe</button>
-                  </span>
-                </div>
-              </form>
-            </div>
           </div>
           <!-- END BOTTOM CONTACTS -->
 
           <!-- BEGIN TWITTER BLOCK --> 
           <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2 class="margin-bottom-0">Latest Tweets</h2>
-            <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="2" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>
+            <h2 class="margin-bottom-0">Latest News</h2>
+            <li>LSP akan diadakan tanggal ...</li>
+            <li>Kartu Ujian LSP dapat dicetak pada ...</li>
           </div>
           <!-- END TWITTER BLOCK -->
         </div>
@@ -708,7 +676,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-4 col-sm-4 padding-top-10">
-            2015 © Keenthemes. ALL Rights Reserved. <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+            2020 © LSP SMK Negeri 2 Karanganyar. ALL Rights Reserved. 
           </div>
           <!-- END COPYRIGHT -->
           <!-- BEGIN PAYMENTS -->
