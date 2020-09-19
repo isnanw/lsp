@@ -50,8 +50,8 @@
                     <div class="box box-primary">
                         <div class="box-body box-profile">
                             <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url('assets/images/').$foto;?>" alt="User profile picture">
-                            <p><h3 class="profile-username text-center"><?php echo $title;?></h3></p>
-                            <p class="text-muted text-center">Web Developer</p>
+                            <p><h3 class="profile-username text-center"><?= $this->session->userdata("name");;?></h3></p>
+                            <p class="text-muted text-center">Admin Aplikasi</p>
                             <a href="<?php echo base_url('auth/logout');?>" class="btn btn-primary btn-block"><b>Sign Out</b></a>
                         </div>
                     </div>

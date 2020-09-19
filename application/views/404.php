@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-	<title>TeknoWebApp - Not Found</title>
+	<title>LSP - Not Found</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -34,7 +34,7 @@
 			<div class="card-footer bg-transparent pb-0">
 				<div class="row">
 				<p class="text-muted text-xs-center col-xs-12 py-1">
-					Copyright &copy; <?php echo date("Y");?> by <a href="http://teknowebapp.com" style="color:grey">TeknoWebApp</a>
+					Copyright &copy; <?php echo date("Y");?> by <a href="http://lsp.smkn2kra.com" style="color:grey">LSP SMKN 2 Karanganyar</a>
 				</p>
 				</div>
 			</div>

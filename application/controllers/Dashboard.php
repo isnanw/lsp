@@ -32,6 +32,18 @@ class Dashboard extends CI_Controller {
 		}
 	}
 
+	public function aplikasi()
+	{
+		if($this->auth_model->logged_id())
+		{
+			$data = konfigurasi('Articles');
+
+			$this->load->view('admin/aplikasi',$data);
+		} else {
+			//jika session belum terdaftar, maka redirect ke halaman login
+			redirect("auth/login");
+		}
+	}
 	//Upload image summernote article
 	function upload_image_post_article(){
 		if($this->auth_model->logged_id())
