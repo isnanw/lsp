@@ -116,7 +116,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="header-navigation pull-right font-transform-inherit">
           <ul>
             <li class="dropdown active">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="<?=base_url('FrontEnd/index');?>">
                 HOME
                 
               </a>
@@ -185,9 +185,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Visi & Misi</a></li>
-                <li><a href="#">Struktur Organisasi</a></li>              
+                <li><a href="<?=base_url('TentangKami/profil');?>">Profil</a></li>
+                <li><a href="<?=base_url('TentangKami/visiMisi');?>">Visi & Misi</a></li>
+                <li><a href="<?=base_url('TentangKami/strukturOrganisasi');?>">Struktur Organisasi</a></li>              
               </ul>
             </li>
 
@@ -226,8 +226,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="#">Skema Sertifikasi</a></li>
-                <li><a href="#">Asesor Kompetensi</a></li>
+                <li><a href="<?=base_url('Sertifikasi/skemaSertifikasi');?>">Skema Sertifikasi</a></li>
+                <li><a href="<?=base_url('Sertifikasi/asesorKompetensi');?>">Asesor Kompetensi</a></li>
                 <li><a href="#">Tempat Uji kompEtensi</a></li>
                 <li><a href="#">Pemegang Sertifikat</a></li>
                 <li><a href="#">SMK Jenjaring Kerja</a></li>

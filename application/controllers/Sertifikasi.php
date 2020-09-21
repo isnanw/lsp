@@ -5,5 +5,10 @@ class Sertifikasi extends CI_Controller{
         $this->load->view('skemaSertifikasi');
         $this->load->view('footer');
     }
+    public function asesorKompetensi(){
+        $this->load->view('header');
+        $this->load->view('asesorKompetensi');
+        $this->load->view('footer');
+    }
 }
 ?>
