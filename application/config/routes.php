@@ -77,6 +77,7 @@ $route['download/(:any)'] = 'dashboard/download_file/$1';
 $route['dashboard/setting.html'] = "auth/profile";
 $route['dashboard/website.html'] = "auth/website";
 $route['dashboard/about.html'] = "TentangKami/homeAbout";
+$route['dashboard/skema-sertifikasi.html'] = "SertifikasiBackEnd/skemaSertifikasi";
 $route['blog/(:any)'] = 'website/blog/$1';
 $route['projects/(:any)'] = 'website/projects/$1';
 $route['blog'] = 'website/blog';

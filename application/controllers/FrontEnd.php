@@ -20,7 +20,7 @@ class FrontEnd extends CI_Controller {
 		$data['project'] = $this->website_model->homeproject();
 
 		$this->load->view('header');
-		$this->load->view('frontEnd',$data);
+		$this->load->view('FrontEnd/frontEnd',$data);
 		$this->load->view('footer');
 	}
 

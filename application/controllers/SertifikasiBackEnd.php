@@ -1,5 +1,5 @@
 <?php
-class TentangKami extends CI_Controller{
+class SertifikasiBackEnd extends CI_Controller{
 
     public function __construct()
 	{
@@ -14,28 +14,10 @@ class TentangKami extends CI_Controller{
 			$this->load->model('auth_model');
 	}
 
-    // ======================= FRONT END ===========================
-    public function profil(){
-        $this->load->view('header');
-        $this->load->view('FrontEnd/About/profil');
-        $this->load->view('footer');
-    }
-    public function visiMisi(){
-        $this->load->view('header');
-        $this->load->view('FrontEnd/About/visiMisi');
-        $this->load->view('footer');
-    }
-    public function strukturOrganisasi(){
-        $this->load->view('header');
-        $this->load->view('FrontEnd/About/strukturOrganisasi');
-        $this->load->view('footer');
-    }
+    public function skemaSertifikasi(){
+        $data = konfigurasi('Skema Sertifikasi');
 
-    // ======================= BACK END ===========================
-    public function homeAbout(){
-        $data = konfigurasi('Setting About');
-
-        $this->load->view('admin/about',$data);
+        $this->load->view('admin/Sertifikasi/skemaSertifikasi',$data);
     }
 
     public function update_instansi()
