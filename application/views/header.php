@@ -18,7 +18,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Asesor Kompetensi</title>
+  <title>LSP</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -34,9 +34,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
   <meta property="og:url" content="-CUSTOMER VALUE-">
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
 
-  <!-- Fonts START -->
+ <!-- Fonts START -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
   <!-- Fonts END -->
 
@@ -48,12 +48,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <!-- Page level plugin styles START -->
   <link href="<?=base_url();?>assets/frontEnd/pages/css/animate.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/frontEnd/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
-
-  <!-- DataTables -->
-  <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="<?=base_url();?>assets/plugins/DataTables/css/dataTables.bootstrap.css" rel="stylesheet">
-  <!-- DataTables -->
 
   <!-- Theme styles START -->
   <link href="<?=base_url();?>assets/frontEnd/pages/css/components.css" rel="stylesheet">
@@ -63,7 +59,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/style-responsive.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/custom.css" rel="stylesheet">
-  <!-- Theme styles END -->
+
+  <!-- DataTables -->
+  <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/plugins/DataTables/css/dataTables.bootstrap.css" rel="stylesheet">
+  <!-- DataTables -->
 </head>
 <!-- Head END -->
 
@@ -102,7 +102,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <!-- BEGIN TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="page-login.html">Log In</a></li>
+                        <li><a href="<?= base_url('auth/login')?>">Log In</a></li>
                         <!-- <li><a href="page-reg-page.html">Registration</a></li> -->
                     </ul>
                 </div>
@@ -300,6 +300,4 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
       </div>
     </div>
     <!-- Header END -->
-    </body>
-<!-- END BODY -->
-</html>
+    

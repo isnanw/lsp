@@ -44,4 +44,13 @@ class Konfigurasi_model extends CI_Model
         return $query->row_array();
     }
 
+     // Konfigurasi Organisasi
+    public function organisasi()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_organisasi');
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
 }
