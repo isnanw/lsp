@@ -18,6 +18,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
+  <title>Asesor Kompetensi</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -47,8 +48,12 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <!-- Page level plugin styles START -->
   <link href="<?=base_url();?>assets/frontEnd/pages/css/animate.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/frontEnd/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="<?=base_url();?>assets/frontEnd/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
+
+  <!-- DataTables -->
+  <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/plugins/DataTables/css/dataTables.bootstrap.css" rel="stylesheet">
+  <!-- DataTables -->
 
   <!-- Theme styles START -->
   <link href="<?=base_url();?>assets/frontEnd/pages/css/components.css" rel="stylesheet">

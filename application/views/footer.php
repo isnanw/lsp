@@ -127,6 +127,37 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
       </div>
     </div>
     <!-- END FOOTER -->
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>
+    <![endif]--> 
+    <script src="<?=base_url();?>assets/plugins/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="<?=base_url();?>assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="<?=base_url();?>assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="<?=base_url();?>assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();    
+            Layout.initTwitter();
+        });
+    </script>
+
+    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#tabel-data').DataTable();
+        });
+    </script>
+    
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 </html>
