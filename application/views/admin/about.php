@@ -60,6 +60,7 @@
                                 <form method="post" action="<?php echo base_url('TentangKami/update_instansi');?>" enctype="multipart/form-data">
                                     <div class="box-body">
                                         <input type="hidden" readonly value="<?php echo $id_visimisi;?>" name="id" class="form-control" >
+                                        <input type="hidden" readonly value="<?php echo $fotoInstansi;?>" name="gambar" class="form-control" >
                                         <div class="form-group">
                                             <label>NPSN</label>
                                             <input type="text" class="form-control" name="NPSN" placeholder="NPSN" value="<?php echo $NPSN;?>">
@@ -88,9 +89,10 @@
                                 </form>
                             </div>
                             <div class="tab-pane" id="sosmed">
-                                <form method="post" action="<?php echo base_url('TentangKami/updateHomeAbout');?>" enctype="multipart/form-data">
+                                <form method="post" action="<?php echo base_url('TentangKami/update_visimisi');?>" enctype="multipart/form-data">
                                     <div class="box-body">
                                         <input type="hidden" readonly value="<?php echo $id_visimisi;?>" name="id" class="form-control" >
+                                        <input type="hidden" readonly value="<?php echo $fotoVM;?>" name="gambar" class="form-control" >
                                         <div class="row">
                                             <div class="form-group col-md-12">
                                                 <label>Visi</label>
@@ -119,9 +121,10 @@
                                 </form>
                             </div>
                             <div class="tab-pane" id="organisasi">
-                                <form method="post" action="<?php echo base_url('TentangKami/updateHomeAbout');?>" enctype="multipart/form-data">
+                                <form method="post" action="<?php echo base_url('TentangKami/update_organisasi');?>" enctype="multipart/form-data">
                                     <div class="box-body">
-                                        <input type="hidden" readonly value="<?php echo $id_profile;?>" name="id" class="form-control" >
+                                        <input type="hidden" readonly value="<?php echo $id_organisasi;?>" name="id" class="form-control" >
+                                        <input type="hidden" readonly value="<?php echo $fotoOrganisasi;?>" name="gambar" class="form-control" >
                                         <div class="row">
                                             <div class="form-group col-md-12">
                                               <label>Gambar</label><br>
@@ -133,7 +136,7 @@
                                             <div class="form-group col-md-12">
                                                 <div class="form-group">
                                                   <label>Deskripsi</label>
-                                                  <textarea id="summernote2" name="organisasi" rows="10" cols="80"><?= $misi;?></textarea>
+                                                  <textarea id="summernote2" name="organisasi" rows="10" cols="80"><?= $deskripsiOrg;?></textarea>
                                                 </div>
                                             </div>
                                         </div>

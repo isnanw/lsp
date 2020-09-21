@@ -9,6 +9,7 @@ function konfigurasi($title)
     $setting = $CI->Konfigurasi_model->setting();
     $profile = $CI->Konfigurasi_model->profile();
     $visimisi = $CI->Konfigurasi_model->visiMisi();
+    $organisasi = $CI->Konfigurasi_model->organisasi();
     $data = array(
       'id_setting'  => $setting['id_setting'],
       'title'       => $setting['web_name'],
@@ -45,10 +46,16 @@ function konfigurasi($title)
       'NPSN'        => $profile['NPSN'],
       'nama_profile'=> $profile['title'],
       'deskripsi'   => $profile['deskripsi'],
+      'fotoInstansi'=> $profile['image'],
 
-      'id_visimisi' => $profile['id'],
+      'id_visimisi' => $visimisi['id'],
       'visi'        => $visimisi['visi'],
       'misi'        => $visimisi['misi'],
+      'fotoVM'      => $visimisi['image'],
+
+      'id_organisasi' => $organisasi['id'],
+      'deskripsiOrg'  => $organisasi['deskripsi'],
+      'fotoOrganisasi'=> $organisasi['image'],
     );
 
     return $data;
