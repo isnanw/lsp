@@ -5,13 +5,13 @@
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">Sertifikasi</a></li>
-            <li class="active">Asesor Kompetensi</li>
+            <li class="active">SMK Jejaring Kerja</li>
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
           <!-- BEGIN CONTENT -->
           <div class="col-md-12 col-sm-12">
-            <center><h3>Daftar ASESOR LSP SMK Negeri 2 Karanganyar</h3></center>
+            <center><h3>Daftar SMK Jejaring Kerja LSP SMK Negeri 2 Karanganyar</h3></center>
             <div class="content-page">
               <div class="row margin-bottom-30">
                 <!-- BEGIN INFO BLOCK -->               
@@ -23,19 +23,21 @@
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>NAMA ASESOR</th>
-                            <th>NO. REGISTRASI</th>
-                            <th>ASAL SEKOLAH</th>
-                            <th>KOMPETENSI</th>
+                            <th>NPSN</th>
+                            <th>NAMA LSP P1 SMK</th>
+                            <th>KOMPETENSI KEAHLIAN</th>
+                            <th>NO NPSN</th>
+                            <th>NAMA SMK JEJARING</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Dwi Nuryani</td>
-                            <td>MET.000.001573 2020</td>
+                            <td>098978</td>
                             <td>SMK N 2 Karanganyar</td>
-                            <td>Rekayasa Perangkat Lunak</td>
+                            <td>REKAYASA PERANGKAT LUNAK</td>
+                            <td>1</td>
+                            <td>SMK BHINA KARYA</td>
                         </tr>
                     </tbody>
                 </table>

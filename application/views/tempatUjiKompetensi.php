@@ -5,7 +5,7 @@
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li><a href="javascript:;">Sertifikasi</a></li>
-            <li class="active">Skema Sertifikasi</li>
+            <li class="active">Tempat Uji Kompetensi</li>
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
