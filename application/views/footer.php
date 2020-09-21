@@ -67,18 +67,18 @@
     <!-- [if lt IE 9]>
     <script src="assets/frontEnd/plugins/respond.min.js"></script>
     <![endif]  -->
-    <script src="assets/frontEnd/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/frontEnd/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/frontEnd/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="assets/frontEnd/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="<?=base_url();?>assets/frontEnd/corporate/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/frontEnd/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/frontEnd/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src="<?=base_url();?>assets/frontEnd/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="<?=base_url();?>assets/frontEnd/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
 
-    <script src="assets/frontEnd/corporate/scripts/layout.js" type="text/javascript"></script>
-    <script src="assets/frontEnd/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/pages/scripts/bs-carousel.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    

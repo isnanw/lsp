@@ -41,23 +41,23 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="assets/frontEnd/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/frontEnd/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
-  <link href="assets/frontEnd/pages/css/animate.css" rel="stylesheet">
-  <link href="assets/frontEnd/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="assets/frontEnd/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/pages/css/animate.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
   <!-- Page level plugin styles END -->
 
   <!-- Theme styles START -->
-  <link href="assets/frontEnd/pages/css/components.css" rel="stylesheet">
-  <link href="assets/frontEnd/pages/css/slider.css" rel="stylesheet">
-  <link href="assets/frontEnd/corporate/css/style.css" rel="stylesheet">
-  <link href="assets/frontEnd/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/frontEnd/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="assets/frontEnd/corporate/css/custom.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/pages/css/components.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/pages/css/slider.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/corporate/css/style.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="<?=base_url();?>assets/frontEnd/corporate/css/custom.css" rel="stylesheet">
 
   <!-- DataTables -->
   <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
