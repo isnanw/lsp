@@ -53,13 +53,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <!-- DataTables -->
   <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/plugins/DataTables/css/dataTables.bootstrap.css" rel="stylesheet">
-  <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.js" type="text/javascript"></script>
-  <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-        $(document).ready(function() {
-            $('#tabel-data').DataTable();
-        });
-        </script>
+  
   <!-- DataTables -->
 
   <!-- Theme styles START -->
@@ -126,19 +120,27 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>
     <![endif]--> 
-    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="<?=base_url();?>assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="<?=base_url();?>assets/corporate/scripts/layout.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    
             Layout.initTwitter();
+        });
+    </script>
+
+    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#tabel-data').DataTable();
         });
     </script>
     

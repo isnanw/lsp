@@ -63,7 +63,7 @@
                             <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
                             <li><a href="#password" data-toggle="tab">Password</a></li>
                             <li><a href="#sosmed" data-toggle="tab">Social Media</a></li>
-                            <li><a href="#setting" data-toggle="tab">Setting</a></li>
+                            <!-- <li><a href="#setting" data-toggle="tab">Website</a></li> -->
                         </ul>
                         <div class="tab-content">
                             <div class="active tab-pane" id="profile">
@@ -150,8 +150,8 @@
                                                 <input type="text" class="form-control" name="ig" placeholder="http://instagram.com/username" value="<?php echo $instagram;?>">
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label>Google Plus</label>
-                                                <input type="text" class="form-control" name="gplus" placeholder="http://plus.google.com/username" value="<?php echo $google_plus;?>">
+                                                <label>Youtube</label>
+                                                <input type="text" class="form-control" name="youtube" placeholder="https://www.youtube.com/channel/UCYEUEhpNSQyB-zdYYyRHlAg" value="<?php echo $youtube;?>">
                                             </div>
                                         </div>
                                     </div>
@@ -162,7 +162,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="tab-pane" id="setting">
+                            <!-- <div class="tab-pane" id="setting">
                                 <form method="post" action="<?php echo base_url('auth/update_website');?>" enctype="multipart/form-data">
                                     <div class="box-body">
                                         <input type="hidden" readonly value="<?php echo $id_setting;?>" name="id" class="form-control" >
@@ -197,7 +197,7 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

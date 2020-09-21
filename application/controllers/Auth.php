@@ -76,9 +76,16 @@ class Auth extends CI_Controller {
     
     public function profile()
     {
-        $data = konfigurasi('Profile');
+        $data = konfigurasi('Setting Profile');
 
         $this->load->view('admin/profile',$data);
+    }
+
+    public function website()
+    {
+        $data = konfigurasi('Setting Website');
+
+        $this->load->view('admin/website',$data);
     }
 
     public function update_profile()
@@ -111,7 +118,7 @@ class Auth extends CI_Controller {
 				unlink("assets/images/".$image);
                 $this->db->update('tbl_users',$data);
 				$this->session->set_flashdata('sukses',"Profile successfully updated, please login again.");
-				redirect('dashboard/profile.html');
+				redirect('dashboard/setting.html');
 			} elseif (!$this->upload->do_upload('gambar')) {
 				$_data = array('upload_data' => $this->upload->data());
 				$tanggal = date('Y-m-d');
@@ -127,10 +134,10 @@ class Auth extends CI_Controller {
 				$this->db->where('id',$this->input->post('id'));
 				$this->db->update('tbl_users',$data);
 				$this->session->set_flashdata('sukses',"Profile successsfully updated, please login again.");
-				redirect('dashboard/profile.html');
+				redirect('dashboard/setting.html');
 			} else {
 				$this->session->set_flashdata('error',"Profile failed to update");
-				redirect('dashboard/profile.html');
+				redirect('dashboard/setting.html');
 			}
 		} else {
 			//jika session belum terdaftar, maka redirect ke halaman login
@@ -158,14 +165,14 @@ class Auth extends CI_Controller {
                     $this->db->where('id',$this->input->post('id'));
                     $this->db->update('tbl_users',$data);
                     $this->session->set_flashdata('sukses',"Password successfully updated, please login again.");
-                    redirect('dashboard/profile.html');
+                    redirect('dashboard/setting.html');
                 } else {
                     $this->session->set_flashdata('error',"Password is not the same.");
-                    redirect('dashboard/profile.html');
+                    redirect('dashboard/setting.html');
                 }
             } else {
                 $this->session->set_flashdata('error',"Password failed to update.");
-                redirect('dashboard/profile.html');
+                redirect('dashboard/setting.html');
             }
         } else {
             //jika session belum terdaftar, maka redirect ke halaman login
@@ -182,13 +189,13 @@ class Auth extends CI_Controller {
                 'facebook' => $this->input->post('fb'),
                 'twitter' => $this->input->post('twt'),
                 'instagram' => $this->input->post('ig'),
-                'google_plus' => $this->input->post('gplus'),
+                'youtube' => $this->input->post('youtube'),
                 'updated_at' => $tanggal,
             );
             $this->db->where('id',$this->input->post('id'));
             $this->db->update('tbl_users',$data);
             $this->session->set_flashdata('sukses',"Social Media successfully updated");
-            redirect('dashboard/profile.html');
+            redirect('dashboard/setting.html');
 		} else {
 			//jika session belum terdaftar, maka redirect ke halaman login
 			redirect("auth/login");
@@ -201,13 +208,13 @@ class Auth extends CI_Controller {
 		{
 			$this->form_validation->set_rules('web_name', 'Web Name', 'trim|required');
 			$this->form_validation->set_rules('keyword', 'Keyword', 'trim|required');
-			$this->form_validation->set_rules('style', 'Homepage', 'trim|required');
+			// $this->form_validation->set_rules('style', 'Homepage', 'trim|required');
 			$this->form_validation->set_rules('description', 'Description', 'trim|required');
 
 			if ($this->form_validation->run() == TRUE) {
 				$tanggal = date('Y-m-d');
 				$data = array(
-					'homepage' => $this->input->post('style'),
+					// 'homepage' => $this->input->post('style'),
 					'web_name' => $this->input->post('web_name'),
 					'web_description' => $this->input->post('description'),
 					'web_keyword' => $this->input->post('keyword'),
@@ -216,10 +223,47 @@ class Auth extends CI_Controller {
 				$this->db->where('id_setting',$this->input->post('id'));
 				$this->db->update('tbl_settings',$data);
 				$this->session->set_flashdata('sukses',"Setting successfully updated");
-				redirect('dashboard/profile.html');
+				redirect('dashboard/website.html');
 			} else {
 				$this->session->set_flashdata('error',"Setting failed to update");
-				redirect('dashboard/profile.html');
+				redirect('dashboard/website.html');
+			}
+		} else {
+			//jika session belum terdaftar, maka redirect ke halaman login
+			redirect("auth/login");
+		}
+    }
+
+    public function update_websiteKontak()
+    {
+        if($this->auth_model->logged_id())
+		{
+			$this->form_validation->set_rules('info_telp', 'No Telp', 'trim|required');
+			$this->form_validation->set_rules('info_email', 'Email', 'trim|required');
+			$this->form_validation->set_rules('info_alamat', 'Alamat', 'trim|required');
+			// $this->form_validation->set_rules('info_peta', 'Peta', 'trim|required');
+
+			if ($this->form_validation->run() == TRUE) {
+				$tanggal = date('Y-m-d');
+				$data = array(
+					'info_fb' => $this->input->post('info_fb'),
+					'info_ig' => $this->input->post('info_ig'),
+					'info_twt' => $this->input->post('info_twt'),
+                    'info_yt' => $this->input->post('info_yt'),
+                    'info_telp' => $this->input->post('info_telp'),
+                    'info_fax' => $this->input->post('info_fax'),
+                    'info_email' => $this->input->post('info_email'),
+                    'info_peta' => $this->input->post('info_peta'),
+                    'info_alamat' => $this->input->post('info_alamat'),
+					'updated_at' => $tanggal,
+				);
+				$this->db->where('id_setting',$this->input->post('id'));
+				$this->db->update('tbl_settings',$data);
+				$this->session->set_flashdata('sukses',"Setting successfully updated");
+				redirect('dashboard/website.html');
+			} else {
+				$this->session->set_flashdata('error',"Setting failed to update");
+				redirect('dashboard/website.html');
 			}
 		} else {
 			//jika session belum terdaftar, maka redirect ke halaman login

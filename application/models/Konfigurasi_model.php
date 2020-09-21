@@ -26,4 +26,22 @@ class Konfigurasi_model extends CI_Model
         return $query->row_array();
     }
 
+    // Konfigurasi About
+    public function profile()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_profile');
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
+    // Konfigurasi Visi Misi
+    public function visiMisi()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_visimisi');
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
 }

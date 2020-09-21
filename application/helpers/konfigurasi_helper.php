@@ -7,14 +7,27 @@ function konfigurasi($title)
     $CI->load->model('Konfigurasi_model');
     $user = $CI->Konfigurasi_model->user();
     $setting = $CI->Konfigurasi_model->setting();
+    $profile = $CI->Konfigurasi_model->profile();
+    $visimisi = $CI->Konfigurasi_model->visiMisi();
     $data = array(
+      'id_setting'  => $setting['id_setting'],
       'title'       => $setting['web_name'],
       'description' => $setting['web_description'],
       'keyword'     => $setting['web_keyword'],
       'homepage'    => $setting['homepage'],
-      'id_setting'  => $setting['id_setting'],
+      'info_fb'    => $setting['info_fb'],
+      'info_ig'    => $setting['info_ig'],
+      'info_twt'    => $setting['info_twt'],
+      'info_yt'    => $setting['info_yt'],
+      'info_telp'    => $setting['info_telp'],
+      'info_fax'    => $setting['info_fax'],
+      'info_email'    => $setting['info_email'],
+      'info_peta'    => $setting['info_peta'],
+      'info_alamat'    => $setting['info_alamat'],
+
       'pagetitle'   => $title.' - '.$setting['web_name'],
       'headtitle'   => $title,
+
       'nama'        => $user['name'],
       'email'       => $user['email'],
       'foto'        => $user['image'],
@@ -22,11 +35,20 @@ function konfigurasi($title)
       'twitter'     => $user['twitter'],
       'facebook'    => $user['facebook'],
       'instagram'   => $user['instagram'],
-      'google_plus' => $user['google_plus'],
+      'youtube'     => $user['youtube'],
       'alamat'      => $user['address'],
       'telepon'     => $user['phone'],
       'last_login'  => $user['last_login'],
       'id'          => $user['id'],
+
+      'id_profile'  => $profile['id'],
+      'NPSN'        => $profile['NPSN'],
+      'nama_profile'=> $profile['title'],
+      'deskripsi'   => $profile['deskripsi'],
+
+      'id_visimisi' => $profile['id'],
+      'visi'        => $visimisi['visi'],
+      'misi'        => $visimisi['misi'],
     );
 
     return $data;

@@ -7,10 +7,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?php echo base_url('assets/images/'.$foto);?>" class="img-circle" alt="<?php echo $this->session->userdata("name");?>">
+                <img src="<?= base_url('assets/images/'.$foto);?>" class="img-circle" alt="<?= $this->session->userdata("name");?>">
             </div>
             <div class="pull-left info">
-                <p style="font-size:13px"><?php echo $this->session->userdata("name");?></p>
+                <p style="font-size:13px"><?= $this->session->userdata("name");?></p>
                 <!-- Status -->
                 <span style="font-size:12px"><i class="fa fa-circle text-success"></i> Administrator</span>
             </div>
@@ -32,16 +32,19 @@
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu" data-widget="tree">
             <!-- Optionally, you can add icons to the links -->
-            <li class="<?php echo $this->uri->segment(2) == '' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-            <li class="<?php echo $this->uri->segment(2) == 'profile.html' ? 'active': '' ?> treeview">
+            <li class="<?= $this->uri->segment(2) == '' ? 'active': '' ?>"><a href="<?= base_url('dashboard');?>"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+            
+            <li class="<?= $this->uri->segment(2) == 'setting.html' || $this->uri->segment(2) == 'website.html' || $this->uri->segment(2) == 'about.html' ? 'active': '' ?> treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Master</span>
+                    <i class="fa fa-dashboard"></i> <span> Setting</span>
                     <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="<?php echo $this->uri->segment(2) == 'setting.html' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/setting.html');?>"><i class="fa fa-circle-o"></i> Setting</a></li>
+                    <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'setting.html' ? 'active': '' ?>"><a href="<?= base_url('dashboard/setting.html');?>"><i class="fa fa-circle-o"></i> Setting Profile</a></li>
+                    <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'website.html' ? 'active': '' ?>"><a href="<?= base_url('dashboard/website.html');?>"><i class="fa fa-circle-o"></i> Setting Website</a></li>
+                    <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'about.html' ? 'active': '' ?>"><a href="<?= base_url('dashboard/about.html');?>"><i class="fa fa-circle-o"></i> Tentang Kami</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -74,15 +77,15 @@
                 </ul>
             </li>
 
-            <li class="<?php echo $this->uri->segment(2) == 'pendaftar.html' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'pendaftar.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'pendaftar' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/pendaftar.html');?>"><i class="fa fa-file-text"></i> <span>Pendaftar</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'pendaftar.html' ? 'active': '' ?><?= $this->uri->segment(3) == 'pendaftar.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'pendaftar' ? 'active': '' ?><?= $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?= base_url('dashboard/pendaftar.html');?>"><i class="fa fa-file-text"></i> <span>Pendaftar</span></a></li>
 
-            <li class="<?php echo $this->uri->segment(2) == 'download.html' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'download.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'download' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/download.html');?>"><i class="fa fa-file-text"></i> <span> File Download</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'download.html' ? 'active': '' ?><?= $this->uri->segment(3) == 'download.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'download' ? 'active': '' ?><?= $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?= base_url('dashboard/download.html');?>"><i class="fa fa-file-text"></i> <span> File Download</span></a></li>
 
-            <li class="<?php echo $this->uri->segment(2) == 'kontak.html' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'kontak.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'articles' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/kontak.html');?>"><i class="fa fa-file-text"></i> <span>Kontak Kami</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'kontak.html' ? 'active': '' ?><?= $this->uri->segment(3) == 'kontak.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'articles' ? 'active': '' ?><?= $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?= base_url('dashboard/kontak.html');?>"><i class="fa fa-file-text"></i> <span>Kontak Kami</span></a></li>
 
-            <li class="<?php echo $this->uri->segment(2) == 'articles.html' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'article.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'articles' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/articles.html');?>"><i class="fa fa-file-text"></i> <span>Articles</span></a></li>
-            <li class="<?php echo $this->uri->segment(2) == 'projects.html' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'project.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'projects' ? 'active': '' ?><?php echo $this->uri->segment(3) == 'project' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/projects.html');?>"><i class="fa fa-rocket"></i> <span>Projects</span></a></li>
-            <li class="<?php echo $this->uri->segment(2) == 'category.html' ? 'active': '' ?><?php echo $this->uri->segment(2) == 'category' ? 'active': '' ?>"><a href="<?php echo base_url('dashboard/category.html');?>"><i class="fa fa-tag"></i> <span>Category</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'articles.html' ? 'active': '' ?><?= $this->uri->segment(3) == 'article.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'articles' ? 'active': '' ?><?= $this->uri->segment(3) == 'post' ? 'active': '' ?>"><a href="<?= base_url('dashboard/articles.html');?>"><i class="fa fa-file-text"></i> <span>Articles</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'projects.html' ? 'active': '' ?><?= $this->uri->segment(3) == 'project.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'projects' ? 'active': '' ?><?= $this->uri->segment(3) == 'project' ? 'active': '' ?>"><a href="<?= base_url('dashboard/projects.html');?>"><i class="fa fa-rocket"></i> <span>Projects</span></a></li>
+            <li class="<?= $this->uri->segment(2) == 'category.html' ? 'active': '' ?><?= $this->uri->segment(2) == 'category' ? 'active': '' ?>"><a href="<?= base_url('dashboard/category.html');?>"><i class="fa fa-tag"></i> <span>Category</span></a></li>
         </ul>
         <!-- /.sidebar-menu -->
     </section>
