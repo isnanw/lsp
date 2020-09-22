@@ -61,8 +61,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/custom.css" rel="stylesheet">
 
   <!-- DataTables -->
-  <link href="<?=base_url();?>assets/plugins/DataTables/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="<?=base_url();?>assets/plugins/DataTables/css/dataTables.bootstrap.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/plugins/DataTables/responsive-2.2.6/css/responsive.dataTables.min.css" rel="stylesheet">
   <!-- DataTables -->
 </head>
 <!-- Head END -->
@@ -122,10 +123,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="header-navigation pull-right font-transform-inherit">
           <ul>
             <li class="dropdown active">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="<?=base_url('FrontEnd/index');?>">
-                HOME
-                
-              </a>
+            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="<?=base_url('FrontEnd/index');?>">HOME</a>
               
             <!-- </li>
             <li class="dropdown dropdown-megamenu">
@@ -247,7 +245,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </a>
                 
               <ul class="dropdown-menu">
-                <li><a href="#">Agenda Kegiatan</a></li>
+                <li><a href="<?=base_url('Informasi/agendaKegiatan');?>">Agenda Kegiatan</a></li>
                 <li><a href="#">Foto Kegiatan</a></li>
                 <li><a href="#">Berita</a></li>
                 <li><a href="#">Tanya Jawab</a></li>

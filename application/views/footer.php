@@ -76,7 +76,7 @@
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
     <script src="<?=base_url();?>assets/frontEnd/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
     <script src="<?=base_url();?>assets/frontEnd/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
-    <script src="<?=base_url();?>assets/pages/scripts/portfolio.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>assets/frontEnd/pages/scripts/portfolio.js" type="text/javascript"></script>
     <script src="<?=base_url();?>assets/frontEnd/corporate/scripts/layout.js" type="text/javascript"></script>
     <script src="<?=base_url();?>assets/frontEnd/pages/scripts/bs-carousel.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -89,8 +89,10 @@
         });
     </script>
 
-    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.js" type="text/javascript"></script>
-    <script src="<?=base_url();?>assets/plugins/DataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/js/jquery.dataTables.js" type="text/javascript"></script>
+<script src="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="<?=base_url();?>assets/plugins/DataTables/Responsive-2.2.6/js/dataTables.responsive.min.js" type="text/javascript"></script>
+
     <script type="text/javascript">
         $(document).ready(function() {
             $('#tabel-data').DataTable();
