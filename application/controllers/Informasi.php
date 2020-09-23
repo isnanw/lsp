@@ -15,5 +15,10 @@ class Informasi extends CI_Controller{
         $this->load->view('FrontEnd/Informasi/berita');
         $this->load->view('footer');
     }
+    public function FAQ(){
+        $this->load->view('header');
+        $this->load->view('FrontEnd/Informasi/FAQ');
+        $this->load->view('footer');
+    }
 }
 ?>
