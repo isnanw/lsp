@@ -12,3 +12,6 @@
   <link href="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/plugins/DataTables/responsive-2.2.6/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></link>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.jqueryui.min.css"></link>
+   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.jqueryui.min.css"></link>
