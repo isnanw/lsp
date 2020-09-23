@@ -124,11 +124,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="header-navigation pull-right font-transform-inherit">
           <ul>
             <li class="dropdown active">
-<<<<<<< HEAD
             <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/index');?>">HOME</a>
-=======
-            <a href="<?=base_url('');?>">HOME</a>
->>>>>>> 628cbd3bc167325a2097256a7d46d97c7b2a6a3b
               
             <!-- </li>
             <li class="dropdown dropdown-megamenu">

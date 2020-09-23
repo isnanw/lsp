@@ -5,12 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Manage <?php echo $headtitle.' - '.$title;?></title>
+  <title>Manage <?= $headtitle.' - '.$title;?></title>
 
 	<?php $this->load->view("layouts/dashboard/_meta.php") ?>
 
 	<?php $this->load->view("layouts/dashboard/_css.php") ?>
-  <link rel="stylesheet" href="<?php echo base_url('assets/plugins/summernote/summernote.css');?>">
+  <link rel="stylesheet" href="<?= base_url('assets/plugins/summernote/summernote.css');?>">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -25,12 +25,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          <?php echo $headtitle;?>
-          <small>Manage <?php echo $headtitle;?></small>
+          <?= $headtitle;?>
+          <small>Manage <?= $headtitle;?></small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="<?php echo base_url('dashboard');?>"><i class="fa fa-dashboard"></i> Administrator</a></li>
-          <li class="active"><?php echo $headtitle;?></li>
+          <li><a href="<?= base_url('dashboard');?>"><i class="fa fa-dashboard"></i> Administrator</a></li>
+          <li class="active"><?= $headtitle;?></li>
         </ol>
       </section>
 
@@ -46,27 +46,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               $sukses = $this->session->flashdata('sukses');
               if($sukses != ""){
           ?>
-          <div id="notifikasi" class="alert alert-success"><strong>Success! </strong> <?php echo $sukses;?></div>
+          <div id="notifikasi" class="alert alert-success"><strong>Success! </strong> <?= $sukses;?></div>
           <?php } ?>
 
           <?php 
               $error = $this->session->flashdata('error');
               if($error != ""){
           ?>
-          <div id="notifikasi" class="alert alert-danger"><strong>Error! </strong> <?php echo $error;?></div>
+          <div id="notifikasi" class="alert alert-danger"><strong>Error! </strong> <?= $error;?></div>
           <?php } ?>
 
-          <!-- <?php
-              if(count($result) == 0){
-          ?>
-          <div class="callout callout-danger">
-            Articles not found.
-          </div>
-          <?php } ?> -->
           <!-- End Notifikasi -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table <?php echo $headtitle;?></h3>
+              <h3 class="box-title">Data Table <?= $headtitle;?></h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -81,16 +74,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </tr>
                 </thead>
                 <tbody>
+                <?php
+                    $no = 1;
+                    foreach($skema as $data) {
+                ?>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
+                  <td><?=$no++;?></td>
+                  <td><image height="50px" src="<?= base_url('assets/images/sertifikasi/').$data['image'] ?>"></image></td>
+                  <td> <?=$data['nama'];?></td>
+                  <td> <?= substr($data['deskripsi'],0,25).'...';?></td>
+                  <td><button>Edit</button><button>Hapus</button></td>
                 </tr>
                 
+                <?php
+                    }
+                ?>
                 </tbody>
                 <!-- <tfoot>
                 <tr>
@@ -116,9 +114,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Add <?php echo $headtitle;?></h4>
+              <h4 class="modal-title">Add <?= $headtitle;?></h4>
             </div>
-            <form action="<?php echo base_url('dashboard/save_category');?>" method="post">
+            <form enctype="multipart/form-data" action="<?= base_url('SertifikasiBackEnd/save_skemasertifikasi');?>" method="post">
               <div class="modal-body">
                 <div class="row">
                   <div class="form-group col-md-6">
@@ -126,10 +124,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="text" class="form-control" name="judul" placeholder="Name">
                   </div>
                   <div class="form-group col-md-6">
-                    <label>Avatar</label><br>
+                    <label>Image</label><br>
                       <div class="btn btn-default btn-file">
                           <i class="fa fa-image"></i> Image
-                          <input type="file" name="gambar">
+                          <input type="file" name="image">
                       </div>
                   </div>
                 </div>
@@ -140,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
               <div class="modal-footer">
                 <button class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-danger">Publish</button>
+                <button type="submit" class="btn btn-primary">Save</button>
               </div>
             </form>
           </div>
@@ -154,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           foreach($result as $data) {
       ?>
       
-      <div class="modal fade" id="modal-delete<?php echo $data['id_article'];?>">
+      <div class="modal fade" id="modal-delete<?= $data['id_article'];?>">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -162,10 +160,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title">Confirm Deletion</h4>
             </div>
-            <form class="form-horizontal" method="post" action="<?php echo base_url('dashboard/delete_article/'.$data['id_article']); ?>">
-              <input type="hidden" readonly value="<?php echo $data['thumb_article'];?>" name="gambar" class="form-control" >
+            <form class="form-horizontal" method="post" action="<?= base_url('dashboard/delete_article/'.$data['id_article']); ?>">
+              <input type="hidden" readonly value="<?= $data['thumb_article'];?>" name="gambar" class="form-control" >
               <div class="modal-body">
-                <p>Are you sure to delete article <b><?php echo $data['title_article'];?></b></p>
+                <p>Are you sure to delete article <b><?= $data['title_article'];?></b></p>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
@@ -180,7 +178,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- /.modal -->
       <!-- <?php } ?> -->
 
-      <!-- <?php echo $pagination; ?> -->
+      <!-- <?= $pagination; ?> -->
 
       </section>
       <!-- /.content -->
@@ -190,13 +188,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php $this->load->view("layouts/dashboard/_footer.php") ?>
 
   </div>
-  <script src="<?php echo base_url('assets/js/jquery-3.4.0.min.js');?>"></script>
-	<script src="<?php echo base_url('assets/js/bootstrap/bootstrap.bundle.js');?>"></script>
+  <script src="<?= base_url('assets/js/jquery-3.4.0.min.js');?>"></script>
+	<script src="<?= base_url('assets/js/bootstrap/bootstrap.bundle.js');?>"></script>
   
   <!-- ./wrapper -->
   <?php $this->load->view("layouts/dashboard/_js.php") ?>
   <!-- Summernote WYSIWYG -->
-  <script src="<?php echo base_url('assets/plugins/summernote/summernote.js');?>"></script>
+  <script src="<?= base_url('assets/plugins/summernote/summernote.js');?>"></script>
   <script type="text/javascript">
     $(document).ready(function(){
 			$('#summernote').summernote({

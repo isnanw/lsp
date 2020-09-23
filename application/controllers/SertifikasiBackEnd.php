@@ -5,7 +5,7 @@ class SertifikasiBackEnd extends CI_Controller{
 	{
 			parent::__construct();
 			//load model dashboard
-			$this->load->model('dashboard_model');
+			$this->load->model('Sertifikasi_model');
 			//load model pagination
 			$this->load->model('pagination_model');
 			//load library pagination
@@ -15,14 +15,78 @@ class SertifikasiBackEnd extends CI_Controller{
 	}
 
     public function skemaSertifikasi(){
-        $data = konfigurasi('Skema Sertifikasi');
-
-        $this->load->view('admin/Sertifikasi/skemaSertifikasi',$data);
+			if($this->auth_model->logged_id()){
+				$data = konfigurasi('Skema Sertifikasi');
+				$data['skema'] = $this->Sertifikasi_model->get_skemasertifikasi();
+        $this->load->view('admin/Sertifikasi/skemaSertifikasi',$data);}
 		}
 		
-		public function save_skemasertifikasi(){
-			
+		public function save_skemasertifikasi()
+		{
+		if($this->auth_model->logged_id())
+		{
+			$this->form_validation->set_rules('judul', 'Nama Skema Serifikasi', 'trim|required');
+			$this->form_validation->set_rules('description', 'Deskripsi', 'trim|required');
+
+			$config['upload_path']          = './assets/images/sertifikasi';
+			$config['allowed_types']        = 'jpg|png|jpeg';
+			$config['max_size']             = 2024;
+			$config['max_width']            = 0;
+			$config['max_height']           = 0;
+			$config['encrypt_name']			= TRUE;
+			$this->load->library('upload', $config);
+
+			if ($this->upload->do_upload('image') and $this->form_validation->run() == TRUE) {
+				$_data = array('upload_data' => $this->upload->data());
+				$tanggal = date('Y-m-d');
+
+				// Buat slug
+				$string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $this->input->post('judul')); //filter karakter unik dan replace dengan kosong ('')
+				$trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+				$pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+				$slug = $pre_slug.'.html'; // tambahkan ektensi .html pada slug
+
+				$data = array(
+					'nama' => $this->input->post('judul'),
+					'slug_title' => $slug,
+					'image' => $_data['upload_data']['file_name'],
+					'deskripsi' => $this->input->post('description'),
+					'created_at' => $tanggal,
+					'updated_at' => $tanggal,
+				);
+				$this->db->insert('tbl_skemasertifikasi',$data);
+				$this->session->set_flashdata('sukses',"Data successfully saved");
+				redirect('dashboard/skema-sertifikasi.html');
+			} elseif (!$this->upload->do_upload('image') and $this->form_validation->run() == TRUE) {
+				$_data = array('upload_data' => $this->upload->data());
+				$tanggal = date('Y-m-d');
+				
+				// Buat slug
+				$string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $this->input->post('judul')); //filter karakter unik dan replace dengan kosong ('')
+				$trim = trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+				$pre_slug = strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+				$slug = $pre_slug; // tambahkan ektensi .html pada slug
+
+				$data = array(
+					'nama' => $this->input->post('judul'),
+					'slug_title' => $slug,
+					'image' => $_data['upload_data']['file_name'],
+					'deskripsi' => $this->input->post('description'),
+					'created_at' => $tanggal,
+					'updated_at' => $tanggal,
+				);
+				$this->db->insert('tbl_skemasertifikasi',$data);
+				$this->session->set_flashdata('sukses',"Data successfully saved");
+				redirect('dashboard/skema-sertifikasi.html');
+			} else {
+				$this->session->set_flashdata('error',"Data failed to saved");
+				redirect('dashboard/skema-sertifikasi.html');
+			}
+		} else {
+			//jika session belum terdaftar, maka redirect ke halaman login
+			redirect("auth/login");
 		}
+	}
 
     public function update_instansi()
 	{
