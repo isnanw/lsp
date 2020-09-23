@@ -18,7 +18,11 @@ class SertifikasiBackEnd extends CI_Controller{
         $data = konfigurasi('Skema Sertifikasi');
 
         $this->load->view('admin/Sertifikasi/skemaSertifikasi',$data);
-    }
+		}
+		
+		public function save_skemasertifikasi(){
+			
+		}
 
     public function update_instansi()
 	{

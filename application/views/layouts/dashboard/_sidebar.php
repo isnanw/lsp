@@ -47,7 +47,7 @@
                     <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'about.html' ? 'active': '' ?>"><a href="<?= base_url('dashboard/about.html');?>"><i class="fa fa-circle-o"></i> Tentang Kami</a></li>
                 </ul>
             </li>
-            <li class="treeview">
+            <li class="treeview <?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'skema-sertifikasi.html' ? 'active': '' ?>">
                 <a href="#">
                     <i class="fa fa-dashboard"></i> <span> Sertifikasi</span>
                     <span class="pull-right-container">
@@ -55,8 +55,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="<?= base_url('dashboard/skema-sertifikasi.html');?>"><i class="fa fa-circle-o"></i> Skema Sertifikasi</a></li>
-                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Asesor Kompetensi</a></li>
+                    <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'skema-sertifikasi.html' ? 'active': '' ?>"><a href="<?= base_url('dashboard/skema-sertifikasi.html');?>"><i class="fa fa-circle-o"></i> Skema Sertifikasi</a></li>
+                    <li class="<?= $this->uri->segment(1) == 'dashboard' && $this->uri->segment(2) == 'asesor-kompetensi.html' ? 'active': '' ?>"><a href="index.html"><i class="fa fa-circle-o"></i> Asesor Kompetensi</a></li>
                     <li><a href="index2.html"><i class="fa fa-circle-o"></i> Tempat Ujian Kopetensi</a></li>
                     <li><a href="index2.html"><i class="fa fa-circle-o"></i> Pemegang Sertifikat</a></li>
                     <li><a href="index2.html"><i class="fa fa-circle-o"></i> SMK Jejaring Kerja</a></li>

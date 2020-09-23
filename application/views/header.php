@@ -116,7 +116,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="index.html"><img src="<?=base_url();?>assets/frontEnd/corporate/img/logos/logo-corp-red.png" alt="LogoLSP"></a>
+        <a class="site-logo" href="<?=base_url('');?>"><img src="<?=base_url();?>assets/frontEnd/corporate/img/logos/logo-corp-red.png" alt="LogoLSP"></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
@@ -124,7 +124,11 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="header-navigation pull-right font-transform-inherit">
           <ul>
             <li class="dropdown active">
+<<<<<<< HEAD
             <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/index');?>">HOME</a>
+=======
+            <a href="<?=base_url('');?>">HOME</a>
+>>>>>>> 628cbd3bc167325a2097256a7d46d97c7b2a6a3b
               
             <!-- </li>
             <li class="dropdown dropdown-megamenu">
