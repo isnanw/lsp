@@ -5,5 +5,15 @@ class Informasi extends CI_Controller{
         $this->load->view('FrontEnd/Informasi/agendaKegiatan');
         $this->load->view('footer');
     }
+    public function fotoKegiatan(){
+        $this->load->view('header');
+        $this->load->view('FrontEnd/Informasi/fotoKegiatan');
+        $this->load->view('footer');
+    }
+    public function berita(){
+        $this->load->view('header');
+        $this->load->view('FrontEnd/Informasi/berita');
+        $this->load->view('footer');
+    }
 }
 ?>

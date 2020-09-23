@@ -59,6 +59,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/style-responsive.css" rel="stylesheet">
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
   <link href="<?=base_url();?>assets/frontEnd/corporate/css/custom.css" rel="stylesheet">
+  <link href="<?=base_url();?>assets/frontEnd/pages/css/fieldset.css" rel="stylesheet">
 
   <!-- DataTables -->
   <link href="<?=base_url();?>assets/plugins/DataTables/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -123,7 +124,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <div class="header-navigation pull-right font-transform-inherit">
           <ul>
             <li class="dropdown active">
-            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="<?=base_url('FrontEnd/index');?>">HOME</a>
+            <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/index');?>">HOME</a>
               
             <!-- </li>
             <li class="dropdown dropdown-megamenu">
@@ -246,14 +247,14 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 
               <ul class="dropdown-menu">
                 <li><a href="<?=base_url('Informasi/agendaKegiatan');?>">Agenda Kegiatan</a></li>
-                <li><a href="#">Foto Kegiatan</a></li>
-                <li><a href="#">Berita</a></li>
+                <li><a href="<?=base_url('Informasi/fotoKegiatan');?>">Foto Kegiatan</a></li>
+                <li><a href="<?=base_url('Informasi/berita');?>">Berita</a></li>
                 <li><a href="#">Tanya Jawab</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+              <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/pendaftaran');?>">
                 PENDAFTARAN
                 
               </a>
@@ -267,7 +268,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+              <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/kontakKami');?>">
                 KONTAK KAMI
                 
               </a>

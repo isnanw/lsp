@@ -24,6 +24,20 @@ class FrontEnd extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function pendaftaran()
+	{
+		$this->load->view('header');
+		$this->load->view('FrontEnd/pendaftaran');
+		$this->load->view('footer');
+	}
+
+	public function kontakKami()
+	{
+		$this->load->view('header');
+		$this->load->view('FrontEnd/kontakKami');
+		$this->load->view('footer');
+	}
+
 	public function projects($rowno=0)
 	{
 		//load model pagination

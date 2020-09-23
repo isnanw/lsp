@@ -1,0 +1,12 @@
+.fieldsetku{
+    border: 2px solid #dddddd;
+    display:inline-block;
+    padding: 1em 2em;
+    width: 100%;
+}
+.legendku{
+    background: #2ac92a;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding: 0.5em 1em;
+}
