@@ -31,6 +31,13 @@ class FrontEnd extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function download()
+	{
+		$this->load->view('header');
+		$this->load->view('FrontEnd/download');
+		$this->load->view('footer');
+	}
+	
 	public function kontakKami()
 	{
 		$this->load->view('header');

@@ -249,7 +249,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <li><a href="<?=base_url('Informasi/agendaKegiatan');?>">Agenda Kegiatan</a></li>
                 <li><a href="<?=base_url('Informasi/fotoKegiatan');?>">Foto Kegiatan</a></li>
                 <li><a href="<?=base_url('Informasi/berita');?>">Berita</a></li>
-                <li><a href="#">Tanya Jawab</a></li>
+                <li><a href="<?=base_url('Informasi/FAQ');?>">FAQ</a></li>
               </ul>
             </li>
 
@@ -261,7 +261,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+              <a class="dropdown-toggle" data-target="#" href="<?=base_url('FrontEnd/download');?>">
                 DOWNLOAD
                 
               </a>
